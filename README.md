@@ -24,6 +24,12 @@ provider_installation {
 }
 ```
 
+## Contents
+
+- `config-for-new-gcp-project` directory - see below
+- `config-for-existing-test-project` directory - see below
+- `test-fixtures` directory - ZIP files for deploying the cloud function, and the code contained by the files
+    - `test-fixtures/function-source-eventarc-gcs` contains a JavaScript function that is triggered by cloud events
 ## Configurations in this repo
 
 This repo contains 2 configurations:
