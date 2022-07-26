@@ -1,0 +1,8 @@
+*/.terraform/
+*/.dev.tfrc
+*/terraform.tfvars
+*/terraform.tfstate
+*/terraform.tfstate.backup
+*/terraform.tfstate.*.backup
+.DS_Store
+*.tfrc
