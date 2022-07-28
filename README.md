@@ -24,6 +24,8 @@ provider_installation {
 }
 ```
 
+- Provide GCP credentials to the provider via ENV variables
+
 ## Contents
 
 - `config-for-new-gcp-project` directory - see below
