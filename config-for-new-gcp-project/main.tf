@@ -5,7 +5,7 @@ provider "google-beta" {
 }
 
 locals {
-  random_suffix = "svcowmnm"
+  random_string = "svcowmnm"
 }
 
 # APIs need to be activated before resources can be created
@@ -71,14 +71,14 @@ resource "google_project_service" "pubsub" {
 # resource "google_service_account" "account" {
 #   provider     = google-beta
 #   project      = var.project_id
-#   account_id   = "tf-test-sa-${local.random_suffix}"
+#   account_id   = "tf-test-sa-${local.random_string}"
 #   display_name = "Test Service Account - used for both the cloud function and eventarc trigger in the test"
 # }
 
 # resource "google_storage_bucket" "source-bucket" {
 #   provider                    = google-beta
 #   project                     = var.project_id
-#   name                        = "tf-test-source-bucket-${local.random_suffix}"
+#   name                        = "tf-test-source-bucket-${local.random_string}"
 #   location                    = "US"
 #   uniform_bucket_level_access = true
 # }
@@ -94,7 +94,7 @@ resource "google_project_service" "pubsub" {
 # resource "google_storage_bucket" "trigger-bucket" {
 #   provider                    = google-beta
 #   project                     = var.project_id
-#   name                        = "tf-test-trigger-bucket-${local.random_suffix}"
+#   name                        = "tf-test-trigger-bucket-${local.random_string}"
 #   location                    = "us-central1" # The trigger must be in the same location as the bucket
 #   uniform_bucket_level_access = true
 # }
@@ -142,7 +142,7 @@ resource "google_project_service" "pubsub" {
 #     google_project_iam_member.artifactregistry-reader,
 #   ]
 #   project     = var.project_id
-#   name        = "tf-test-function-${local.random_suffix}"
+#   name        = "tf-test-function-${local.random_string}"
 #   location    = "us-central1"
 #   description = "A new function that is triggered by new files being added to a bucket"
 

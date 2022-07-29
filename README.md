@@ -8,6 +8,7 @@ To test this PR this you will need to
 - Clone magic-modules and checkout the branch from that PR
 - Build the provider on your machine using the Makefile
 - Use a developer override in your CLI configuration to make Terraform use the local copy of the provider:
+    - used with `TF_CLI_CONFIG_FILE`
 
 
 ```
